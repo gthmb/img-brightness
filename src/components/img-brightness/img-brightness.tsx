@@ -1,5 +1,4 @@
 import { Component, Prop, Listen, State } from '@stencil/core';
-import '@material/mwc-icon';
 
 const MIN_BRIGHTNESS = 0.1;
 const MAX_BRIGHTNESS = 2;
@@ -49,7 +48,7 @@ export class MyComponent {
                     <slot />
                 </div>
                 <div class="controls-container">
-                    <mwc-icon>brightness_4</mwc-icon>
+                    <img src="/src-images/brightness_4.svg" />
                     <input
                         ref={(el: HTMLInputElement) => this.sliderInput = el}
                         type="range"
@@ -58,7 +57,7 @@ export class MyComponent {
                         step={STEP_SIZE}
                         value={this.brightness}
                         onInput={() => this.updateBrightness()} />
-                    <mwc-icon>brightness_7</mwc-icon>
+                    <img src="/src-images/brightness_7.svg" />
                 </div>
             </div>
         );
