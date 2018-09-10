@@ -12,7 +12,7 @@ const STEP_SIZE = 0.1;
     styleUrl: 'img-brightness.scss',
     shadow: true
 })
-export class MyComponent {
+export class ImgBrightness {
 
     @State() brightness: number;
 

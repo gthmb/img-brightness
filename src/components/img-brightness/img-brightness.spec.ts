@@ -1,9 +1,9 @@
 import { TestWindow } from '@stencil/core/testing';
-import { MyComponent } from './img-brightness';
+import { ImgBrightness } from './img-brightness';
 
 describe('img-brightness', () => {
     it('should build', () => {
-        expect(new MyComponent()).toBeTruthy();
+        expect(new ImgBrightness()).toBeTruthy();
     });
 
     describe('rendering', () => {
@@ -12,7 +12,7 @@ describe('img-brightness', () => {
         beforeEach(async () => {
             testWindow = new TestWindow();
             element = await testWindow.load({
-                components: [MyComponent],
+                components: [ImgBrightness],
                 html: '<img-brightness></img-brightness>'
             });
         });
