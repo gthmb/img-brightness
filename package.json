@@ -1,0 +1,51 @@
+{
+    "name": "img-brightness",
+    "version": "0.0.1",
+    "description": "@gthmb making a StencilJs component for adjusting image brightness",
+    "module": "dist/esm/index.js",
+    "main": "dist/index.js",
+    "types": "dist/types/components.d.ts",
+    "collection": "dist/collection/collection-manifest.json",
+    "files": [
+        "dist/"
+    ],
+    "scripts": {
+        "build": "stencil build",
+        "start": "stencil build --dev --watch --serve",
+        "test": "jest",
+        "test.watch": "jest --watch"
+    },
+    "dependencies": {
+        "@material/icon-button": "^0.39.1",
+        "@material/mwc-icon": "^0.1.2"
+    },
+    "devDependencies": {
+        "@stencil/core": "^0.11.0",
+        "@stencil/sass": "^0.1.0",
+        "@types/jest": "^23.3.1",
+        "jest": "^23.4.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gthmb/img-brightness.git"
+    },
+    "author": "Jonathan Greene",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/gthmb/img-brightness"
+    },
+    "homepage": "https://github.com/gthmb/img-brightness",
+    "jest": {
+        "transform": {
+            "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
+        },
+        "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(tsx?|jsx?)$",
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js",
+            "json",
+            "jsx"
+        ]
+    }
+}
