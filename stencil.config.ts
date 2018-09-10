@@ -16,7 +16,6 @@ export const config: Config = {
         sass()
     ],
     copy: [
-        { src: 'demo-images' },
         { src: 'src-images' }
     ]
 };
