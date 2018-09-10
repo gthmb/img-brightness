@@ -1,8 +1,11 @@
 import { Component, Prop, Listen, State } from '@stencil/core';
+import { BRIGHTNESS_4_SVG, BRIGHTNESS_7_SVG } from './img-brightness.icons';
 
 const MIN_BRIGHTNESS = 0.1;
 const MAX_BRIGHTNESS = 2;
 const STEP_SIZE = 0.1;
+
+
 
 @Component({
     tag: 'img-brightness',
@@ -48,7 +51,7 @@ export class MyComponent {
                     <slot />
                 </div>
                 <div class="controls-container">
-                    <img src="/src-images/brightness_4.svg" />
+                    <div innerHTML={BRIGHTNESS_4_SVG}></div>
                     <input
                         ref={(el: HTMLInputElement) => this.sliderInput = el}
                         type="range"
@@ -57,7 +60,7 @@ export class MyComponent {
                         step={STEP_SIZE}
                         value={this.brightness}
                         onInput={() => this.updateBrightness()} />
-                    <img src="/src-images/brightness_7.svg" />
+                    <div innerHTML={BRIGHTNESS_7_SVG}></div>
                 </div>
             </div>
         );
