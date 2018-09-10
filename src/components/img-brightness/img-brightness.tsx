@@ -1,4 +1,4 @@
-import { Component, Prop, Listen, State } from '@stencil/core';
+import { Component, Listen, State } from '@stencil/core';
 import { BRIGHTNESS_4_SVG, BRIGHTNESS_7_SVG } from './img-brightness.icons';
 
 const MIN_BRIGHTNESS = 0.1;
@@ -14,8 +14,6 @@ const STEP_SIZE = 0.1;
 })
 export class MyComponent {
 
-    @Prop() first: string;
-    @Prop() last: string;
     @State() brightness: number;
 
     sliderInput: HTMLInputElement;

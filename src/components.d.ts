@@ -30,8 +30,7 @@ declare global {
 
   namespace StencilComponents {
     interface ImgBrightness {
-      'first': string;
-      'last': string;
+
     }
   }
 
@@ -54,8 +53,7 @@ declare global {
   }
   namespace JSXElements {
     export interface ImgBrightnessAttributes extends HTMLAttributes {
-      'first'?: string;
-      'last'?: string;
+
     }
   }
 }
